@@ -1,0 +1,91 @@
+* {
+  transition: 0.2s;
+}
+
+window {
+  font-family: "FiraCode Nerd Font Mono", monospace;
+  font-size: 13px;
+  margin: 0;
+  border: 2px solid rgba(200, 180, 160, 0.7); /* Light brown */
+  background: rgba(30, 30, 30, 0.8); /* Dark background with transparency */
+  border-radius: 16px;
+  backdrop-filter: blur(15px); /* Strong blur effect for glass look */
+}
+
+#input {
+  padding: 8px 20px;
+  margin: 20px;
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  background: linear-gradient(90deg, rgba(130, 90, 70, 0.7) 0%, rgba(250, 240, 230, 0.7) 100%); /* Dark brown to light cream gradient */
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  backdrop-filter: blur(10px); /* Glass blur effect */
+}
+
+#input image {
+  color: #ffffff;
+}
+
+#input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(200, 180, 160, 0.8); /* Glow effect */
+}
+
+#inner-box {
+  margin: 20px 20px 0;
+  color: rgba(200, 180, 160, 0.9); /* Light brown text */
+  border-radius: 16px;
+  background: rgba(30, 30, 30, 0.6); /* Slightly translucent dark background */
+  backdrop-filter: blur(15px); /* Glass blur effect */
+}
+
+#inner-box * {
+  transition: none;
+}
+
+#outer-box {
+  margin: 0;
+  border: none;
+  padding: 0;
+  border-radius: 16px;
+}
+
+#scroll {
+  margin: 5px 0;
+  border-radius: 16px;
+}
+
+#text:selected {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgba(130, 90, 70, 0.8); /* Highlight color */
+}
+
+#img {
+  margin-right: 20px;
+  background: transparent;
+}
+
+#text {
+  margin: 0;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+#entry {
+  margin: 0;
+  border: none;
+  border-radius: 16px;
+  background-color: transparent;
+  min-height: 32px;
+  font-weight: bold;
+}
+
+#entry:selected {
+  outline: none;
+  background: linear-gradient(90deg, rgba(130, 90, 70, 0.7) 0%, rgba(250, 240, 230, 0.7) 100%); /* Same gradient as input */
+}
+
